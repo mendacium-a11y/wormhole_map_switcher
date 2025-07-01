@@ -66,7 +66,7 @@ ros2 launch turtlebot3_navigation2 navigation2.launch.py map:=/path/to/room1.yam
 ### 2. Save Poses
 Run pose saver node:
 ```
-ros2 run your_pkg save_pose_node
+ros2 run multi_map_nav save_pose_node
 ```
 Save pose using service:
 
@@ -75,7 +75,7 @@ ros2 service call /save_pose custom_msg/srv/SavePose "{map_name: 'room1', point_
 ### 3. Save Wormholes
 Run wormhole saver node:
 ```
-ros2 run your_pkg wormhole_saver
+ros2 run multi_map_nav wormhole_saver
 ```
 Save a wormhole from current map to another:
 ```
@@ -85,7 +85,7 @@ Ensure the robot is at the wormhole position.
 
 ### 4. Launch Multi-Map Action Server
 ```
-ros2 run your_pkg multi_map_action_server --ros-args -p current_map:=room1
+ros2 run multi_map_nav multi_map_action_server --ros-args -p current_map:=room1
 ```
 ### 5. Send Navigation Goal
 ```
