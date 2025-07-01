@@ -1,0 +1,6 @@
+# SaveWormhole.srv
+string source_map
+string target_map
+---
+bool success
+string message

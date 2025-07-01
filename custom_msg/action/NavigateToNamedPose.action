@@ -1,0 +1,7 @@
+string pose_name
+string map_name
+---
+bool success
+string message
+---
+float32 progress
