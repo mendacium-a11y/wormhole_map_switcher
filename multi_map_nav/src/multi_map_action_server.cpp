@@ -13,7 +13,7 @@
 #include <nav2_msgs/srv/load_map.hpp>
 #include "multi_map_nav/pose_saver_db.hpp" 
 #include "multi_map_nav/wormhole_db.hpp"  
-#include "custom_msg/action/navigate_to_named_pose.hpp"  // Custom action
+#include "custom_msg/action/navigate_to_named_pose.hpp"  
 
 using namespace std::chrono_literals;
 using NavigateToPose = nav2_msgs::action::NavigateToPose;
